@@ -1,1 +1,139 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Company Member Team</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<styles>
+*body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+header {
+ background-color: #333;
+ color: white;
+ text-align: center;
+ padding: 1rem;
+}
+
+.team-member {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ padding: 2rem;
+}
+
+.team-member img {
+ width: 100%;
+ max-width: 300px;
+ height: auto;
+ border-radius: 50%;
+ margin-bottom: 1rem;
+}
+*{
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+footer {
+ background-color: #333;
+ color: white;
+ text-align: center;
+ padding: 1rem;
+ margin-top: 1rem;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+ .team-member {
+    padding: 1rem;
+ }
+ .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+<body>
+ <header>
+
+ 	 <h1>Company Member Team</h1>
+
+        Welcome to Veritech,where a dedicated team of professionals works together to bring innovations,creativity and expertise to software industry.get to know the individuals who make our company thrive.
+
+        <p class="tagline"><i>IF U CAN DREAM IT,YOU CAN DO IT</i></p>
+   
+ </header>
+
+ <main>
+    <section class="team-member">
+      <img src="member1.jpg" alt="Team Member 1">
+       <h2>Issac</h2>
+       <p>Founder & CEO</p>
+       <h3><u>DEVELOPER TEAM</u></h3>
+
+       <div class="clearfix">
+       <div class="img-container">
+      <img src="member1.jpg" alt="Team Member 1" style="width:100%">
+       <h2>Newton</h2>
+         <p>Devloper-1</p>
+       </div>
+       <div class="img-container">
+       <img src="member1.jpg" alt="Team Member 1" style="width:100%">
+       <h2>Agarwal</h2>
+       <p>Devloper-2</p>
+       </div>
+       <div class="img-container">
+       <img src="member1.jpg" alt="Team Member 1" style="width:100%">
+       <h2>Reshma</h2>
+       <p>Devloper-3</p>
+   </div> 
+   <h3><u>TESTING TEAM</u></h3>
+
+       <div class="clearfix">
+       <div class="img-container">
+      <img src="member1.jpg" alt="Team Member 1" style="width:100%">
+       <h2>Sowthee</h2>
+         <p>Tester-1</p>
+       </div>
+       <div class="img-container">
+       <img src="member1.jpg" alt="Team Member 1" style="width:100%">
+       <h2>Roma</h2>
+       <p>Tester-2</p>
+       </div>
+       <div class="img-container">
+       <img src="member1.jpg" alt="Team Member 1" style="width:100%">
+       <h2>Varna</h2>
+       <p>Tester-3</p>
+       </section>
+      
+     </main>
+
+ <footer>
+    <p>&copy; 2024 VeriTech. All rights reserved.</p>
+ </footer>
+</body>
+</html>
