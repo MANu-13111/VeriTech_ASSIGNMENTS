@@ -1,0 +1,136 @@
+## HTML CODE ##
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your OTT Platform</title>
+</head>
+<body>
+
+    <header>
+        <h1>Your OTT Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured">
+            <h2>Featured Content</h2>
+            <!-- Include featured movies, series, etc. -->
+            <div class="video-container">
+                <video controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your OTT Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+## CSS ##
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.featured {
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+## JAVASSCRIPT ##
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the video element
+    var video = document.querySelector('video');
+
+    // Get the play/pause button
+    var playPauseButton = document.getElementById('play-pause');
+
+    // Add click event listener to the play/pause button
+    playPauseButton.addEventListener('click', function () {
+        if (video.paused) {
+            video.play();
+            playPauseButton.innerText = 'Pause';
+        } else {
+            video.pause();
+            playPauseButton.innerText = 'Play';
+        }
+    });
+
+    // Add event listener to update play/pause button based on video state
+    video.addEventListener('play', function () {
+        playPauseButton.innerText = 'Pause';
+    });
+
+    video.addEventListener('pause', function () {
+        playPauseButton.innerText = 'Play';
+    });
+});
