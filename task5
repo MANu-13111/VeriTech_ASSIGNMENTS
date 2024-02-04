@@ -1,0 +1,30 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Project Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Project Name</h1>
+        <p>Internship Showcase</p>
+    </header>
+
+    <section>
+        <h2>About the Project</h2>
+        <p>This is a brief description of your completed project.</p>
+    </section>
+
+    <section>
+        <h2>Access the Project</h2>
+        <p>Click the button below to access the deployed project:</p>
+        <a href="http://your-project-url.com" target="_blank">
+            <button>Open Project</button>
+        </a>
+    </section>
+</body>
+</html>
